@@ -1,0 +1,24 @@
+# Node.js 相关文件和文件夹：
+node_modules/
+npm-debug.log
+yarn-error.log
+# 构建工具生成的文件夹：
+dist/
+build/
+# 编辑器和 IDE 生成的文件：
+.vscode/
+.idea/
+*.iml
+# 替换文件：
+*.log
+*.log.*
+# 本地配置文件：
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+# 通用文件忽略：
+.DS_Store
+Thumbs.db
