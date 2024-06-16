@@ -3,14 +3,15 @@
   "version": "1.1.6",
   "description": "",
   "main": "dist/bundle.js",
-  "type": "module",
   "directories": {
     "test": "test"
   },
   "scripts": {
     "test": "jest --config jest.config.cjs",
     "prepublishOnly": "node index.cjs && rollup --config rollup.config.js",
-    "build": "npm run prepublishOnly && npm publish"
+    "build": "npm run prepublishOnly && npm publish",
+    "docs:dev": "vuepress dev docs --temp .temp",
+    "docs:build": "vuepress build docs"
   },
   "author": "",
   "license": "ISC",
