@@ -158,7 +158,6 @@
     "jest-diff": "^26.6.2",
     "jest-docblock": "^26.0.0",
     "jest-each": "^26.6.2",
-    "jest-environment-jsdom": "^26.6.2",
     "jest-environment-node": "^26.6.2",
     "jest-get-type": "^26.3.0",
     "jest-haste-map": "^26.6.2",
@@ -354,11 +353,17 @@
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.5",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/jest": "^29.5.12",
+    "jest-environment-jsdom": "^29.7.0",
+    "ts-jest": "^29.1.4",
+    "typescript": "^5.4.5",
     "vuepress": "^1.9.10"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-   },
+  },
+  "types": "lib/index.d.ts",
   "keywords": [],
   "author": "",
   "license": "ISC"
