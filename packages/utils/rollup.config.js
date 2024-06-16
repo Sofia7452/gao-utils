@@ -4,7 +4,7 @@
 
 
 export default {
-  input: 'utils/index.js',
+  input: 'utils/src/index.js',
   output: {
     file: 'dist/bundle.js',
     format: 'es',
