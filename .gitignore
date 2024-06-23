@@ -24,3 +24,4 @@ build/
 Thumbs.db
 # jest统计文件
 packages/utils/coverage/*
+packages/utils/.temp/

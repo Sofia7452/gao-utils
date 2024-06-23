@@ -9,35 +9,11 @@ import GlobalLayout from "/Users/gaojia/学习/utils/gao-utils/node_modules/@vue
 injectComponentOption(GlobalLayout, 'mixins', rootMixins)
 export const routes = [
   {
-    name: "v-2d663d28",
-    path: "/Java/JavaEE.html",
+    name: "v-caf993f0",
+    path: "/Basic/sum.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-2d663d28").then(next)
-    },
-  },
-  {
-    name: "v-b43991a8",
-    path: "/Basic/Basic1.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-b43991a8").then(next)
-    },
-  },
-  {
-    name: "v-6d4daf68",
-    path: "/Java/JavaSE.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-6d4daf68").then(next)
-    },
-  },
-  {
-    name: "v-2e1dca6a",
-    path: "/Basic/Basic2.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-2e1dca6a").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-caf993f0").then(next)
     },
   },
   {
@@ -51,6 +27,14 @@ export const routes = [
   {
     path: "/index.html",
     redirect: "/"
+  },
+  {
+    name: "v-239e3708",
+    path: "/Request/axiosHandle.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-239e3708").then(next)
+    },
   },
   {
     path: '*',
