@@ -22,3 +22,5 @@ build/
 # 通用文件忽略：
 .DS_Store
 Thumbs.db
+# jest统计文件
+packages/utils/coverage/*
