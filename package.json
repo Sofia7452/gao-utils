@@ -354,8 +354,6 @@
   "devDependencies": {
     "@changesets/cli": "^2.27.5",
     "@rollup/plugin-typescript": "^11.1.6",
-    "@types/jest": "^29.5.12",
-    "jest-environment-jsdom": "^29.7.0",
     "ts-jest": "^29.1.4",
     "typescript": "^5.4.5",
     "vuepress": "^1.9.10"

@@ -5,9 +5,7 @@
     "rootDir": "../../packages",
   },
   "include": [
-    "../../packages/**/*.ts"
-, "__test__/sum.test.js"  ],
-  "exclude": [
-    "../../packages/**/__test__/*.test.ts",
-  ]
+    "**/*.ts",
+  ],
+  "exclude": []
 }
