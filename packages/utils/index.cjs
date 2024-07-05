@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable no-undef */
 const jest = require("jest");
 const chalk = require('chalk');
 const fs = require('fs');
@@ -40,7 +42,7 @@ jest
   .runCLI(options, options.projects)
   .then((success) => {
     // console.log('success.results', success.results);
-    const { numPassedTestSuites, numFailedTestSuites, numTotalTestSuites } = success.results || {}
+    const { numPassedTestSuites, numTotalTestSuites } = success.results || {}
     if (numPassedTestSuites == numTotalTestSuites) {
       console.log(chalk.bold.yellow("jest校验执行成功！"));
       process.exit(0);
