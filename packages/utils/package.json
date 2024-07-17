@@ -43,5 +43,8 @@
     "tslib": "^2.6.3",
     "typescript": "^5.5.2",
     "typescript-eslint": "^7.15.0"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.11"
   }
 }

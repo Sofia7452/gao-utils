@@ -1,4 +1,3 @@
-// jest有问题可以先忽略
 export function calculateUploadSpeed(file: File): Promise<number> {
   return new Promise((resolve, reject) => {
     const xhr = new XMLHttpRequest();
