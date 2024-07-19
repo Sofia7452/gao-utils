@@ -1,0 +1,13 @@
+module.exports = {
+  testMatch: ["**/__tests__/**/*.ts", "**/?(*.)+(spec|test).ts"],
+  coverageProvider: 'babel',
+  testEnvironment: 'jsdom',
+  testEnvironmentOptions: {
+    userAgent:
+      'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36',
+  },
+  transform: {
+    '^.+\\.ts?$': 'ts-jest'
+  },
+  moduleFileExtensions: ['ts', 'js', 'json', 'node']
+};
