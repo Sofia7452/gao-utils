@@ -17,7 +17,7 @@
     "baseUrl": "./",
     "paths": {
       "@/*": [
-        "packages/*"
+        "src/*"
       ]
     },
     "resolveJsonModule": true,

@@ -1,4 +1,5 @@
-// import { terser } from 'rollup-plugin-terser';
+import { terser } from 'rollup-plugin-terser';
+import { visualizer } from 'rollup-plugin-visualizer';
 // import commonjs from '@rollup/plugin-commonjs';
 // import { nodeResolve } from '@rollup/plugin-node-resolve';
 import typescript from 'rollup-plugin-typescript2';
@@ -20,6 +21,11 @@ export default {
     // }),
     // resolve(),
     // commonjs(),
+    visualizer({
+      gzipSize: true,
+      brotliSize: true
+    }),
+    terser(),
     typescript({
       tsconfig: './tsconfig.json',
       compilerOptions: {

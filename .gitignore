@@ -23,5 +23,6 @@ build/
 .DS_Store
 Thumbs.db
 # jest统计文件
-packages/utils/coverage/*
-packages/utils/.temp/
+utils/coverage/*
+utils/.temp/
+lib/

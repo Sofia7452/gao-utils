@@ -2,10 +2,14 @@
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "outDir": "lib",
-    "rootDir": "../../packages",
+    "rootDir": ".",
   },
   "include": [
-    "**/*.ts",
+    "src/**/*",             // 包含 src 目录下的所有 TypeScript 文件
+    "__test__/**/*"
   ],
-  "exclude": []
+  "exclude": [
+    "node_modules",         // 排除 node_modules 目录
+    "lib"   
+  ]
 }
