@@ -25,4 +25,4 @@ Thumbs.db
 # jest统计文件
 utils/coverage/*
 utils/.temp/
-lib/
+dist/

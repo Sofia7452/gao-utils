@@ -1,26 +1,62 @@
 import { terser } from 'rollup-plugin-terser';
 import { visualizer } from 'rollup-plugin-visualizer';
-// import commonjs from '@rollup/plugin-commonjs';
-// import { nodeResolve } from '@rollup/plugin-node-resolve';
 import typescript from 'rollup-plugin-typescript2';
 
+const output = [
+  {
+    name: 'utils',
+    format: 'esm',
+    file: 'dist/index.esm.js',
+    // sourcemap: true,
+  },
+  {
+    name: 'utils',
+    format: 'umd',
+    file: 'dist/index.umd.js',
+    // sourcemap: true,
+  },
+  {
+    name: 'utils',
+    format: 'iife',
+    file: 'dist/index.iife.js',
+    // sourcemap: true,
+  },
+  {
+    name: 'utils',
+    format: 'cjs',
+    file: 'dist/index.cjs.js',
+    // sourcemap: true,
+  },
+  {
+    name: 'utils',
+    format: 'esm',
+    file: 'dist/index.esm.min.js',
+    // plugins: [terser()]
+  },
+  {
+    name: 'utils',
+    format: 'umd',
+    file: 'dist/index.umd.min.js',
+    // plugins: [terser()]
+  },
+  {
+    name: 'utils',
+    format: 'iife',
+    file: 'dist/index.iife.min.js',
+    // plugins: [terser()]
+  },
+  {
+    name: 'utils',
+    format: 'cjs',
+    file: 'dist/index.cjs.min.js',
+    // plugins: [terser()]
+  }
+]
 
 export default {
   input: './src/index.ts',
-  output: {
-    file: 'lib/bundle.js',
-    format: 'es',
-    // plugins: [terser()]
-    // plugins: [commonjs(), nodeResolve()]
-  },
+  output,
   plugins: [
-    // postcss({
-    //     minimize: true,
-    //     extensions: ['.css'],
-    //     extract: true,
-    // }),
-    // resolve(),
-    // commonjs(),
     visualizer({
       gzipSize: true,
       brotliSize: true
