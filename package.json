@@ -1,8 +1,23 @@
 {
   "name": "gao-utils",
-  "version": "1.0.0",
+  "version": "1.1.9",
   "description": "",
-  "main": "index.js",
+  "main": "lib/bundle.js",
+  "type": "module",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest --config jest.config.cjs",
+    "prepublishOnly": "node index.cjs && rollup --config rollup.config.mjs",
+    "build": "npm run prepublishOnly && npm publish",
+    "docs:dev": "vuepress dev docs --temp .temp",
+    "docs:build": "vuepress build docs",
+    "coveralls": "jest --coverage",
+    "prepare": "husky"
+  },
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
@@ -29,8 +44,7 @@
     "typescript": "^5.5.2",
     "typescript-eslint": "^7.15.0"
   },
-  "types": "lib/index.d.ts",
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "dayjs": "^1.11.11"
+  }
 }

@@ -1,5 +1,5 @@
 
-const gaoJoin = (a:number, b:number) => {
+const gaoJoin = (a:String, b:String) => {
   let test = 'gaojointest'
   return test + a + b
 }
