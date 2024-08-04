@@ -15,10 +15,11 @@
     "test": "jest --config jest.config.cjs",
     "prepublishOnly": "node index.cjs && rollup --config rollup.config.mjs",
     "build": "npm run prepublishOnly && npm publish",
-    "docs:dev": "vuepress dev docs --temp .temp",
-    "docs:build": "vuepress build docs",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
     "coveralls": "jest --coverage",
-    "prepare": "husky"
+    "prepare": "husky",
+    "docs:preview": "vitepress preview docs"
   },
   "author": "",
   "license": "ISC",
